@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<title>客户站点</title>
+</head>
+
+<body>
+<p>Post Transaction Success!</p>
+
+<p>上传的transaction信息：</p>
+<ul>
+  <li>type      : {{ type }}</li>
+  <li>nonce     : {{ nonce }}</li>
+  <li>hash      : {{ hash }}</li>
+  <li>contents  : {{ contents }}</li>
+  <li>signature : {{ signature }}</li>
+  <li>pubkey    : {{ pubkey }}</li>
+</ul>
+<p>以上 transaction 正在等待 mine 到 blockchain。</p>
+
+<p><a href="/transaction/paper_submit/">继续提交新论文</a></p>
+
+<p><a href="http://bcserver.inkac.cn/">blockchain主服务</a> blockchain服务站点页面</p>
+
+<p></p>
+</body>
+
+</html>
