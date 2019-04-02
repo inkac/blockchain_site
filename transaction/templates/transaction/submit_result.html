@@ -16,7 +16,13 @@
   <li>signature : {{ signature }}</li>
   <li>pubkey    : {{ pubkey }}</li>
 </ul>
-<p>以上 transaction 正在等待 mine 到 blockchain。</p>
+
+<p>以上 transaction 提交矿工节点的信息反馈：</p>
+<p>如果反馈0，则等待矿工挖矿后上链</p>
+<ul>
+  <li>result      : {{ result }}</li>
+</ul>
+
 
 <p><a href="/transaction/paper_submit/">继续提交新论文</a></p>
 

@@ -6,15 +6,54 @@
 
 <body>
 <p>这是一个基于区块链技术的科技论文发布站点。by Haiming</p>
-<form action="action" method="GET">
+<!--  <form action="action" method="GET">  -->
+<form action="action" method="POST">
 <fieldset>
 <legend>Paper Information:</legend>
+
 Title:<br>
-<input type="text" name="paper_title" value="This is a new paper title">
-<br>
+<input type="text" name="paper_title" style="width:300px;" value="This is a new paper title"><br>
+
 Author:<br>
-<input type="text" name="paper_author" value="Paper Author">
-<br><br>
+<input type="text" name="paper_author" value="Paper Author"><br>
+
+Public key:<br>
+<textarea id="pubkey" name="pubkey" style="width:500px;height:300px;"> 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxbkkPG/XChup4UKtGHWgGpxtKWyo4FlOuLFluQABxuFsw1USZ6gjtKwFYj2r/MueLyey96TtDSNzDARG0xIEVGx4xAhzcM2AgBiSbf8eX4AwuCNKPIcpgYj5Jhed11SYtWUrsaP269lIcgw+WX/w5s4Uajs66F1Ss4HvwYGKAijOdH18hSDNtcoraCuGzvjQGmX6OYJXWnJFCK8OxeztapwoITdCDn+okPb1EYm0E+ClldXXSQqOhhkGA+57BkJeGI+RH5TNESnQabwB8g36jTKx+iPsP7bKpPb6B2SPF6EqmAG8CYQQW0ouELQkAdgXtbYVXPbq80f3EwVrrbp/B 
+</textarea><br>
+
+Private key:<br>
+<textarea id="prikey" name="prikey" rows="30" cols="64"> 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA8W5JDxv1wobqeFCrRh1oBqcbSlsqOBZTrixZbkAAcbhbMNVE
+meoI7SsBWI9q/zLni8nsvek7Q0jcwwERtMSBFRseMQIc3DNgIAYkm3/Hl+AMLgjS
+jyHKYGI+SYXnddUmLVlK7Gj9uvZSHIMPll/8ObOFGo7OuhdUrOB78GBigIoznR9f
+IUgzbXKK2grhs740Bpl+jmCV1pyRQivDsXs7WqcKCE3Qg5/qJD29RGJtBPgpZXV1
+0kKjoYZBgPuewZCXhiPkR+UzREp0Gm8AfIN+o0ysfoj7D+2yqT2+gdkjxehKpgBv
+AmEEFtKLhC0JAHYF7W2FVz26vNH9xMFa626fwQIDAQABAoIBAEOkvL+I+/CG0Ibp
+QzOf5ZeHlnPc2xVf3A4+ysfDEtzJ5HLoLhJZqiqZFAV2GWprHsjhyHzlLf+KGKBi
+Wk2liO0a7fiZOPDRTCtszTDsOkXpNkBnpGcJ9qPOotkCtXkkQVAPZpiaSgzqGtN2
+PRXKyuZ3z+FDBdTJ2KWfN9p/htmwU6uPbqCb+Qlv0NaTIeK/wMrCKL6dGBTnFtLy
+i6JXL6ZgSQNP5/Ojt/qqlprSS1+Fi9urHzRw1SRgfeUwooDkeP+UCAT0s9/5FOqu
+FPemFn7EBof9EJNde3TT18CvKyVL80kp4IwH3xQnqxhpJrW+7wO5KplYfqVj+Hb5
+ZjZBfgECgYEA/8x2Yfg7ZuTsT1ZvJG88y/oVwyGIpowive2MbPHXkBAor4v1SOHL
+eH3xSg5IlX3G4JgYoTZyhj7fwkxC3Fkj/9GFwcoRagANdoCv+39PpryyhV7djElG
+6sPr+nKIl5ZfaQwe5uelzCcqlPrC7gx7NCfp2Br6ta5ek0zlDTt14LECgYEA8Z7t
+m6aLyUBSVk4LUsgQ0Y222Y6AV6jYhbOvyDkIjWfiROjM7TDZjU4J9ShQWg3bm0Ph
+6DeK8PMmD5eP27udjs9YA03GDkwPapLC5nXQBI78AaXZ/ZcUxT4VOOm28FZcgp0g
+jYPf9CaMc8oEe0dUO1R4r6BSMEcaFCCPBXIS9BECgYEAt5tKKf4knTGaUURIWI2j
+xQHIFxz92hXiZhOZZSWeReDjY0YBlQPFqcI0rKReAzeZxeJGY4kSYTvGHs/gegtd
+5KS+7p+dKknJYBL0vn/ea18sgMDcI3MBfUeOHWGSm8QqzdsOX01M26INVYw82OOK
+l6BCoISVCk2TwwVBr+LLNLECgYATT7aB+D+36BIsn7Q7+42Mkh0JKmCLoQ0dMo1c
+HWLXmnP1Of4W/w6EQrZ9B6nUaMMil7xYiQfr1iM2n9B5qXcgUOYh7Xdk8SNSS0SU
+ktn7Y0o0/4J6yDZ6xUmA8P0UHHLsZY6SgPXHV8VmA8Fz8PGEhG3Y66FmBmjJLwj/
+UGy/YQKBgQDPFNWvaIScizdRIXbaDzKCDGOcSYyQiTlA+P3UbjtpL+qcWY2uMSmZ
+M5t/z8o7bS/XXmvTzAtXyLv9rEslxco55LLQzdYsHZcXZp9/HJ6c/b4mJ6RcUeVq
+bOywf3R2RRCYsNdWwSb/Fo0nZJ+JFH7/MHbbx7X9ssO1y9Yl2IeTwA==
+-----END RSA PRIVATE KEY-----
+</textarea><br>
+
+<br>
 <input type="submit" value="Submit"></fieldset>
 </form> 
 </body>
